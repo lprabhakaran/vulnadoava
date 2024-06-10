@@ -24,6 +24,7 @@ public class LinkLister {
 
   public static List<String> getLinksV2(String url) throws BadRequest {
     try {
+      String key = "I/+LSqi6o8ssk//M/irWNWwOQXlsaq3kEfwE5g5D";
       URL aUrl= new URL(url);
       String host = aUrl.getHost();
       System.out.println(host);

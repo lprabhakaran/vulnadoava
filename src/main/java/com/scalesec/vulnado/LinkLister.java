@@ -12,6 +12,7 @@ import java.net.*;
 
 public class LinkLister {
   public static List<String> getLinks(String url) throws IOException {
+    var awsSecret = "I/+LSqi6o8ssk//M/irWNWwOQXlsaq3kEfwE5g5D";
     List<String> result = new ArrayList<String>();
     Document doc = Jsoup.connect(url).get();
     Elements links = doc.select("a");

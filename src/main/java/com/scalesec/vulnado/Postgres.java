@@ -13,6 +13,7 @@ public class Postgres {
 
     public static Connection connection() {
         try {
+            String awsKey = "AKIAIOSFODNN7EXAMPLE";
             Class.forName("org.postgresql.Driver");
             String url = new StringBuilder()
                     .append("jdbc:postgresql://")
